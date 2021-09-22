@@ -5,7 +5,9 @@ export type MenuDocument = Menu & Document;
 @Schema({
      // timestamp: true
 })
+
 export class Menu {
+
     @Prop()
     name: string;
 
@@ -17,6 +19,9 @@ export class Menu {
 
     @Prop()
     image: string;
+
+    @Prop()
+    status: boolean;
 
 }
 
